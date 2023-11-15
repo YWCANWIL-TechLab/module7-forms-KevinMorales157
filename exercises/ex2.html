@@ -19,56 +19,56 @@
             <a href="../index.html">Home</a>
         </header>
         <section id="questions" class="container">
-            <p>
+            <p><del>
                 In the section with an id of answers, create a form with an id and name of form1. Ask the user 
                 for their first and last name using text inputs. The first name should have a default value of 
                 "John" and the last name should have a default value of "Doe". You can create this using the 
-                value attribute.
+                value attribute.</del>
             </p>
-            <p>
+            <p><del>
                 In the section with an id of answers, create a form with an id and name of form2. Ask the user 
                 for their first and last name using text inputs. You should also have a text field for a middle
-                name, but disable it with the disabled attribute.
+                name, but disable it with the disabled attribute.</del>
             </p>
-            <p>
+            <p><del>
                 In the section with an id of answers, create a form with an id and name of form3. Ask the user
                 to enter a username with a text input. You should also have a password input, but it should use 
-                the readonly attribute.
+                the readonly attribute.</del>
             </p>
-            <p>
+            <p><del>
                 In the section with an id of answers, create a form with an id and name of form4. Ask the user
                 for a review using a textarea element. Make sure the textarea is at least 50 characters wide.
-                Include a reset input as well.
+                Include a reset input as well.</del>
             </p>
-            <p>
+            <p><del>
                 In the section with an id of answers, create a form with an id and name of form5. Ask the user
-                to leave another review using a textarea element. This time, give the max length of 100 characters.
+                to leave another review using a textarea element. This time, give the max length of 100 characters.</del>
             </p>
             <p>
-                In the section with an id of answers, create a form with an id and name of form6. Ask the user 
+               <del> In the section with an id of answers, create a form with an id and name of form6. Ask the user 
                 for any date that happened during the Covid-19 Pandemic. The US considered it an emergency from 
                 Jan 31, 2020 to May 11, 2023. Using the min and max attributes, restrict the user's choices to 
-                that range of dates.
+                that range of dates.</del>
             </p>
             <p>
-                In the section with an id of answers, create a form with an id and name of form7. Ask the user
+               <del> In the section with an id of answers, create a form with an id and name of form7. Ask the user
                 for all the HTML files of the current website they are on. You can ask for a file with a file
-                input, but you will need to use the multiple attribute to allow multiple files to be selected.
+                input, but you will need to use the multiple attribute to allow multiple files to be selected.</del>
             </p>
             <p>
-                In the section with an id of answers, create a form with an id and name of form8. Ask the user
-                for a question to search using a search input. Create a placeholder to ask them for their question.
+                <del>In the section with an id of answers, create a form with an id and name of form8. Ask the user
+                for a question to search using a search input. Create a placeholder to ask them for their question.</del>
 
             </p>
             <p>
-                Inside the section with an id of answers, create a form with an id and name of form9. Ask the user
-                for their favorite number using a number input. The input should be autofocused.
+               <del> Inside the section with an id of answers, create a form with an id and name of form9. Ask the user
+                for their favorite number using a number input. The input should be autofocused.</del>
             </p>
             <p>
-                Inside the section with an id of answers, create a form with an id and name of form10. Ask the user
+                <del>Inside the section with an id of answers, create a form with an id and name of form10. Ask the user
                 to select a number between 0 and 100. You should accept input as a slider by creating a range element.
                 You should set min and max attributes so that the lowest number is 0 and the highest number is 100. 
-                You should set the step attribute as well so that they can only select numbers divisible by 2.
+                You should set the step attribute as well so that they can only select numbers divisible by 2.</del>
             </p>
             <p>
                 Inside the section with an id of answers, create a form with an id and name of form11. Ask the user
@@ -84,7 +84,82 @@
             </p>
         </section>
         <section id="answers" class="container">
-
+            <form id="form1">
+                <label for="fname">first name</label>
+                <input type="text" id="fname" name="fname" value="John">
+                <label for="lname">last name</label>
+                <input type="text" id="lname" name="lname" value="Doe">
+            </form>
+            <br>
+            <form id="form2">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" value="John">
+                <label for="mname">Middle name</label>
+                <input id="mname" name="mname" value="disable">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" value="Doe">
+            </form>
+            <br>
+            <form id="form3">
+                <label id="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <label id="password">Pssword:</label>
+    <input type="password" id="password" name="password" value="password here" readonly>
+            </form>
+            <br>
+            <form id="form4">
+                <label id="review">Like our work? think we need to improve? share your thoughts and leave a review</label><br>
+                <input type="text" id="review" name="review" size="50">
+            </form>
+            <br>
+            <form id="form5">
+                <label id="review2">More on your mind? leave it here</label><br>
+                <textarea maxlength="50">
+                </textarea>
+            </form>
+            <br>
+            <form id="form6">
+                <label id="date-max">Enter a date after 1/31/20 where the United states issued a National emergency for the Novel CoronaVirus SARS-19 virus</label>
+                <input type="date" id="date-max" name="date-max" max="2023-05-11" min="2020-31-1">
+            </form>
+            <br>
+            <br>
+            <form id="form7">
+                <label id="work">Submit your work here!</label>
+                <input type="file" id="work" name="work" multiple>
+            </form>
+            <br>
+            <br>
+            <form id="form8">
+                <label id="diy">Unsure?Google will help!</label>
+                <input type="search" id="diy" name="diy" placeholder="do it yourself">
+            </form>
+            <br>
+            <br>
+            <form id="form9">
+                <label id="favnum">got a lucky number? Let us know!</label>
+                <input type="number" id="favnum" name="favnum" autofocus>
+            </form>
+            <form id="form10">
+                <label id="numslide">Pick a number between 0-100 but it has to be divisible by 2</label>
+                <input type="range" id="numslide" name="numslide" min="0" max="100" step="2">
+            </form>
+            <br>
+            <br>
+            <form id="form11">
+                <label id="namemo">Enter your first</label>
+                <input type="text" id="namemo" name="namemo">
+                <label id="nameko">Enter your Last name</label>
+                <input type="text" id="nameko" name="nameko">
+                <input type="submit" value="submit">
+            </form>
+            <br>
+            <br>
+            <form id="form12">
+                <label id="fruits">You know what I love? Fruits! whats your favorite?</label>
+                <input type="text" id="fruits" name="fruits" autofocus>
+                <datalist id="fruits" list="fruits">Peaches, Oranges, Apples</datalist>
+            </form>
         </section>
         <script src="" async defer></script>
     </body>
